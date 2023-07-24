@@ -24,11 +24,23 @@ body {
 }
 
 .container {
-  width: 95%;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1100px;
+  min-width: 1050px;
   margin: auto;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* li properties */
 li {
   list-style: none;
 }
@@ -38,11 +50,27 @@ li a {
   color: black;
 }
 
-.d-flex {
-  display: flex;
+/* button properties */
+button {
+  border: none;
+}
+
+.btn-blue {
+  background-color: var(--blue);
+  color: white;
+}
+
+.btn-white {
+  background-color: white;
 }
 
 /* HEADER */
+header {
+  background-color: var(--lightblue);
+  font-weight: 500;
+}
+
+/* NAVBAR */
 .navbar {
   padding: 10px 15px;
   justify-content: space-between;
@@ -55,6 +83,11 @@ li a {
   border-bottom: 2px solid var(--lightgrey);
 }
 
+.navbar-left,
+.navbar-right {
+  flex-shrink: 0;
+}
+
 .navbar-left nav ul
 .navbar-right nav ul {
   flex-direction: row;
@@ -62,30 +95,64 @@ li a {
 
 .navbar-left nav ul li {
   margin-right: 20px;
-  font-weight: 500;
 }
 
 .navbar-right nav ul li {
   margin-left: 20px;
-  font-weight: 500;
 }
 
 .navbar-right button {
-  background-color: var(--blue);
   padding: 5px 10px;
-  color: white;
-  border: none;
 }
 
-
-
-
-
-
-
-
-
-main {
-  background-color: var(--lightblue);
-  height: 1000px;
+/* JUMBOTRON */
+.jumbotron {
+  padding-top: 100px;
 }
+
+.jumbotron h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.jumbotron button {
+  padding: 10px 10px;
+}
+
+.row {
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+
+/* JUMBOTRON'S ELEMENTS PROPERTIES */
+.text-part {
+  width: 25%;
+}
+
+.text-part p {
+  margin-bottom: 20px;
+}
+
+.text-part ul li {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.text-part a i {
+  font-size: 3rem;
+}
+
+.image {
+  width: 75%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* /HEADER */
