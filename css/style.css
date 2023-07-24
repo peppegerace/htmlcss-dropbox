@@ -1,5 +1,24 @@
+/* Custom properties */
+:root {
+  --blue: #0061ff ;
+  --lightblue: #b4d0e7 ;
+  --bluesky: #0093ce ;
+  --darkblue: #0d2481 ;
+  --lightgreen: #a2d39b ;
+  --bordeaux: #61082b ;
+  --red: #d5001f ;
+  --lightred: #ff1c1c ;
+  --yellow: #ffd830 ;
+}
+
+/* General properties */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--lightblue);
 }
