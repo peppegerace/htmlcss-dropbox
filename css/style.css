@@ -203,7 +203,6 @@ main {
 
 .horizontal {
   width: 100%;
-  height: 100px; 
   border: 2px solid var(--lightgrey);
 }
 
@@ -234,9 +233,10 @@ main {
   color: #6e6e6e;
 }
 
-.col button {
+.col button,
+.horizontal-btn button {
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 40px;
 }
 
@@ -252,3 +252,13 @@ main {
 .info-plane h3 {
   margin-bottom: 30px;
 }
+
+/* HORIZONTAL */
+.horizontal-text {
+  width: 70%;
+}
+
+.horizontal-btn {
+  width: 30%;
+}
+
