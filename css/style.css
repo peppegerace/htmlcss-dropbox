@@ -315,6 +315,7 @@ main section {
 .square {
   width: calc(100vw / 3);
   min-width: 450px;
+  height: calc(100vw /3);
 }
 
 .box-square,
