@@ -90,7 +90,6 @@ button {
 
 .btn-white {
   background-color: white;
-  border: 1px solid black;
   color: black;
 }
 
@@ -284,6 +283,7 @@ main section {
 
 .text-partner button {
   padding: 10px 15px;
+  border: 1px solid black;
   font-weight: 500;
 }
 
@@ -306,7 +306,7 @@ main section {
   margin-bottom: 50px;
 }
 
-/* SQUARE-CONTAINER */
+/* SQUARE SECTION */
 .square-container {
   width: 99vw;
   height: 100%;
@@ -314,7 +314,6 @@ main section {
 
 .square {
   width: calc(100vw / 3);
-  min-width: 450px;
   height: calc(100vw /3);
 }
 
@@ -348,7 +347,7 @@ main section {
 
 .box-square-center {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .box-square-center::before {
@@ -368,4 +367,28 @@ main section {
 .square-center p,
 .square-center span {
   font-size: 0.9rem;
+}
+/* /SQUARE SECTION*/
+
+/* FREE TRIAL SECTION */
+.box-free-trial {
+  width: 99vw;
+  background-color: var(--lightblue);
+}
+
+.title-trial {
+  width: 50%;
+  color: var(--bordeaux);
+  padding: 100px 0;
+}
+
+.btn-trial {
+  width: 25%;
+  padding: 100px 0;
+}
+
+.btn-trial button {
+  width: 100%;
+  padding: 10px 15px;
+  font-weight: 500;
 }
