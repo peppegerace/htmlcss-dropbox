@@ -139,6 +139,17 @@ header {
   padding: 5px 10px;
 }
 
+/* NAVBAR HOVER EFFECTS */
+.navbar-left li:hover a {
+  padding-bottom: 22px;
+  border-bottom: 3px solid var(--darkblue);
+}
+
+.navbar-right li:hover a{
+  padding-bottom: 20px;
+  border-bottom: 3px solid var(--darkblue);
+}
+
 /* JUMBOTRON */
 .jumbotron {
   padding-top: 100px;
