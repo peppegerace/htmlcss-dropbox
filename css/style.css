@@ -127,7 +127,8 @@ header {
   flex-shrink: 0;
 }
 
-.navbar-left nav ul li {
+.navbar-left nav ul li,
+.navbar-left img {
   margin-right: 20px;
 }
 
@@ -429,11 +430,12 @@ main section {
 
 .faq h2 {
   padding: 50px 0;
+  border-bottom: 1px solid grey; 
 }
 
 .faq li {
   padding: 25px 0;
-  border-top: 1px solid grey; 
+  border-bottom: 1px solid grey; 
   position: relative;
 }
 
@@ -445,10 +447,9 @@ main section {
 
 .faq .hidden-text {
   display: none;
-  position: absolute;
   top: 100%;
   left: 0;
-  padding-bottom: 25px;
+  padding: 20px 0;
 }
 
 .faq li:hover .hidden-text {
